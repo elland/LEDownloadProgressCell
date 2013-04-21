@@ -23,6 +23,7 @@
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
     [self.progressView setFrame:CGRectMake(0, 0, (self.bounds.size.width) * self.progress, self.bounds.size.height)];
     UIImage *bgImage = [self.progressView imageRepresentationWithSize:self.bounds.size backgroundColor:[UIColor whiteColor]];
     [self setBackgroundColor:[UIColor colorWithPatternImage:bgImage]];
